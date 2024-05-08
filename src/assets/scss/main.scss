@@ -2,7 +2,26 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+@font-face {
+    font-family: "Sinoreta";
+    src: local("Sinoreta"), url(../fonts/SinoretaPersonalUseRegular-eZdEl.otf) format("otf");
+}
+
+$font-family-sans-serif: Sinoreta;
+$link-color: white;
 
 @import "~bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+body {
+    background-color: black;
+}
+
+.clockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+}
