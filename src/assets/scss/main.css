@@ -11969,8 +11969,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: black;
+#sky {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.wrapper {
+  z-index: 1;
+  position: relative;
 }
 
 .clockContainer {

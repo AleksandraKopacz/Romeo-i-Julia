@@ -1,13 +1,26 @@
+const MOON = new Image();
+MOON.src = "./assets/images/moon.png";
+
+const CLOCK = new Image();
+CLOCK.src = "./assets/images/clock.png";
+
+const LONGER = new Image();
+LONGER.src = "./assets/images/longer.png"
+
+const SHORTER = new Image();
+SHORTER.src = "./assets/images/shorter.png"
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let radius = canvas.height / 2;
 ctx.translate(radius, radius);
 radius = radius * 0.9;
-setInterval(drawClock, 1000);
+CLOCK.onload = () => {
+  setInterval(drawClock, 1000);
+};
 
 function drawClock() {
   drawFace(ctx, radius);
-  drawNumbers(ctx, radius);
   drawTime(ctx, radius);
 }
 
@@ -24,32 +37,9 @@ function drawFace(ctx, radius) {
   grad.addColorStop(0.5, "white");
   grad.addColorStop(1, "#333");
   ctx.beginPath();
-  ctx.arc(0, 0, radius, 0, 2 * Math.PI);
-  ctx.fillStyle = "white";
-  ctx.fill();
-  ctx.strokeStyle = grad;
-  ctx.lineWidth = radius * 0.1;
-  ctx.stroke();
-  ctx.beginPath();
-  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
-  ctx.fillStyle = "#333";
-  ctx.fill();
-}
 
-function drawNumbers(ctx, radius) {
-  ctx.font = radius * 0.15 + "px arial";
-  ctx.textBaseline = "middle";
-  ctx.textAlign = "center";
-  for (let num = 1; num < 13; num++) {
-    let ang = (num * Math.PI) / 6;
-    ctx.rotate(ang);
-    ctx.translate(0, -radius * 0.85);
-    ctx.rotate(-ang);
-    ctx.fillText(num.toString(), 0, 0);
-    ctx.rotate(ang);
-    ctx.translate(0, radius * 0.85);
-    ctx.rotate(-ang);
-  }
+  ctx.drawImage(MOON, -188, -186, 375, 375);
+  ctx.drawImage(CLOCK, -180, -179, 360, 360);
 }
 
 function drawTime(ctx, radius) {
@@ -63,22 +53,38 @@ function drawTime(ctx, radius) {
     (hour * Math.PI) / 6 +
     (minute * Math.PI) / (6 * 60) +
     (second * Math.PI) / (360 * 60);
-  drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+  drawHour(ctx, hour, radius * 0.5, radius * 0.07);
   //minute
   minute = (minute * Math.PI) / 30 + (second * Math.PI) / (30 * 60);
-  drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+  drawMinute(ctx, minute, radius * 0.8, radius * 0.07);
   // second
   second = (second * Math.PI) / 30;
-  drawHand(ctx, second, radius * 0.9, radius * 0.02);
+  drawSecond(ctx, second, radius * 0.9, radius * 0.02);
 }
 
-function drawHand(ctx, pos, length, width) {
+function drawHour(ctx, pos, length, width) {
   ctx.beginPath();
-  ctx.lineWidth = width;
-  ctx.lineCap = "round";
   ctx.moveTo(0, 0);
   ctx.rotate(pos);
-  ctx.lineTo(0, -length);
-  ctx.stroke();
+  ctx.drawImage(SHORTER, -20, -length-10, SHORTER.width*0.15, SHORTER.height * 0.15);
   ctx.rotate(-pos);
+}
+
+function drawMinute(ctx, pos, length, width) {
+  ctx.beginPath();
+  ctx.moveTo(0, 0);
+  ctx.rotate(pos);
+  ctx.drawImage(LONGER, -10, -length, LONGER.width * 0.15, LONGER.height * 0.15);
+  ctx.rotate(-pos);
+}
+
+function drawSecond(ctx, pos, length, width) {
+  ctx.beginPath();
+    ctx.lineWidth = width* 0.25;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length*0.99);
+    ctx.stroke();
+    ctx.rotate(-pos);
 }

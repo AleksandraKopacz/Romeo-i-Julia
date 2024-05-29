@@ -10,28 +10,32 @@
 </head>
 
 <body>
-  <nav>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Kapuleci</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Montekowie</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <div class="clockContainer">
-      <canvas id="canvas" width="400" height="400" style="background-color: aliceblue;">
-        Sorry, your browser does not support canvas.
-      </canvas>
-    </div>
-    <div style="clear: both;"">
-      <h1 style="text-align: center; color: white;">Romeo i Julia</h1>
-      <p style="text-align: center; color: white;">Lorem ipsum</p>
-    </div>
-  </main>
-  <script src="./assets/js/clock.js"></script>
+  <div class="wrapper">
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Kapuleci</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Montekowie</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="clockContainer">
+        <canvas id="canvas" width="400" height="400">
+          Sorry, your browser does not support canvas.
+        </canvas>
+        <script src="./assets/js/clock.js"></script>
+      </div>
+      <div style="clear: both;">
+        <h1 style="text-align: center; color: white;">Romeo i Julia</h1>
+        <p style="text-align: center; color: white;">Lorem ipsum</p>
+      </div>
+    </main>
+  </div>
+  <canvas id="sky"></canvas>
+  <script src="./assets/js/sky.js"></script>
 </body>
 
 </html>
