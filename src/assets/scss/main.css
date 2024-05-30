@@ -11969,7 +11969,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#sky, #act {
+#sky,
+#act,
+#bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#juliet, #romeo {
   position: absolute;
   left: 0;
   top: 0;
@@ -12051,12 +12059,14 @@ textarea.form-control-lg {
   color: #333;
 }
 
-.btn-navi, .btn-choice:hover {
+.btn-navi,
+.btn-choice:hover {
   background-color: #af4a51;
   color: white;
 }
 
-.btn-navi:hover, .btn-choice {
+.btn-navi:hover,
+.btn-choice {
   background-color: white;
   border-color: #af4a51;
   color: black;
