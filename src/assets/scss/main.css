@@ -2939,7 +2939,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-color: #af4a51;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
@@ -11969,7 +11969,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#sky {
+#sky, #act {
   position: absolute;
   left: 0;
   top: 0;
@@ -11986,4 +11986,78 @@ textarea.form-control-lg {
   align-items: center;
   text-align: center;
   min-height: 70vh;
+}
+
+#quiz-app {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+#controls {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#controls.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+  background: linear-gradient(to right, #6DD5FA, #2979FF);
+  color: #333;
+}
+
+.btn-navi, .btn-choice:hover {
+  background-color: #af4a51;
+  color: white;
+}
+
+.btn-navi:hover, .btn-choice {
+  background-color: white;
+  border-color: #af4a51;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Application</title>
+    <link href="./assets/scss/main.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body class="bodyQuiz">
+    <div class="wrapper">
+        <nav>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="kapulet.html">Kapuleci</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="montek.html">Montekowie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+              </li>
+            </ul>
+          </nav>
+          <main class="quiz">
+        <div id="quiz-app">
+            <h1>JavaScript Basics Quiz</h1>
+            <div id="question-container">
+                <div id="question">Questions will go here</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Answer buttons will be added here dynamically -->
+                </div>
+            </div>
+            <div id="controls">
+                <button id="start-btn" class="btn btn-navi">Start</button>
+                <button id="next-btn" class="btn btn-navi">Next</button>
+            </div>
+            <div id="results">
+                <!-- Results will be shown here -->
+            </div>
+        </div>
+    </div>
+</main>
+    <canvas id="act">
+        Sorry, your browser does not support canvas.
+    </canvas>
+    <script src="./assets/js/quiz.js"></script>
+    <script src="./assets/js/acts.js"></script>
+</body>
+
+</html>
