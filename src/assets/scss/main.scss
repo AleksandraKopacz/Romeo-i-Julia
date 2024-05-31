@@ -23,10 +23,8 @@ $btn-color: #af4a51;
   top: 0;
 }
 
-#juliet, #romeo {
-  position: absolute;
-  left: 0;
-  top: 0;
+.pics {
+  padding-top: 20vh;
 }
 
 .wrapper {
@@ -116,4 +114,9 @@ $btn-color: #af4a51;
   background-color: white;
   border-color: $btn-color;
   color: black;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
 }

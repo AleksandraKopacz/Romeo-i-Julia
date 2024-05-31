@@ -11977,10 +11977,8 @@ textarea.form-control-lg {
   top: 0;
 }
 
-#juliet, #romeo {
-  position: absolute;
-  left: 0;
-  top: 0;
+.pics {
+  padding-top: 20vh;
 }
 
 .wrapper {
@@ -12070,4 +12068,9 @@ textarea.form-control-lg {
   background-color: white;
   border-color: #af4a51;
   color: black;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

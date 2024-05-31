@@ -4,9 +4,6 @@ FRAME.src = "./assets/images/frame.png";
 const JULIET = new Image();
 JULIET.src = "./assets/images/juliet.png";
 
-const ROMEO = new Image();
-ROMEO.src = "./assets/images/romeo.png";
-
 const juliet = document.getElementById("juliet");
 const jlCtx = juliet.getContext("2d");
 
