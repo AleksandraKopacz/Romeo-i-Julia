@@ -17,11 +17,3 @@ function loadRomeo() {
     rmCtx.drawImage(FRAME2, 0, 0, FRAME2.width / 2, FRAME2.height / 2);
   };
 }
-
-document.getElementById("romeo").addEventListener(
-  "click",
-  function () {
-    console.log("clicked");
-  },
-  false
-);

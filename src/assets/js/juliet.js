@@ -17,11 +17,3 @@ function loadJuliet() {
     jlCtx.drawImage(FRAME, 0, 0, FRAME.width / 2, FRAME.height / 2);
   };
 }
-
-document.getElementById("juliet").addEventListener(
-  "click",
-  function () {
-    console.log("clicked");
-  },
-  false
-);
