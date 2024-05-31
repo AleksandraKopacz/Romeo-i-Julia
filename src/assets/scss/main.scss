@@ -10,6 +10,9 @@
 $font-family-sans-serif: Sinoreta;
 $link-color: white;
 $btn-color: #af4a51;
+$prpl-bg: #392f3d;
+$prpl-stripe: #252229;
+$modal-header-border-color: $prpl-stripe;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -119,4 +122,9 @@ $btn-color: #af4a51;
 img {
   max-width: 70%;
   height: auto;
+}
+
+.purple {
+  background-color: $prpl-bg;
+  color: white;
 }
