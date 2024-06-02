@@ -77,7 +77,7 @@ function selectAnswer(selectedButton) {
     } else {
       concludeQuiz();
     }
-  }, 1000); // Adjust delay as needed
+  }, 1000);
 }
 
 function setStatusClass(element, correct) {
@@ -102,9 +102,9 @@ function concludeQuiz() {
 
   resultsElement.classList.remove("hide");
   resultsElement.innerHTML = `
-      <h2>Quiz Completed!</h2>
-      <p>Your score: ${score} out of ${shuffledQuestions.length}</p>
-      <button class="btn btn-navi" onclick="restartQuiz()">Restart Quiz</button>
+      <h2>Quiz zakończony!</h2>
+      <p>Wynik: ${score} na ${shuffledQuestions.length}</p>
+      <button class="btn btn-navi" onclick="restartQuiz()">Spróbuj ponownie</button>
   `;
 
   switchAct(-1);
