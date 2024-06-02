@@ -5,24 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Romeo i Julia</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
   <link href="./assets/scss/main.css" rel="stylesheet">
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="romeoandjuliet.html">Romeo i Julia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sidecharacters.html">Postacie poboczne</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="quiz.html">Quiz</a>
-        </li>
-      </ul>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.png" alt="logo" width="40" height="40">
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="romeoandjuliet.html">Romeo i Julia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sidecharacters.html">Postacie poboczne</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container text-center pics">
       <div class="row">
@@ -163,8 +169,7 @@
     </div>
   </div>
   <canvas id="bg"></canvas>
-  <script src="./assets/js/juliet.js"></script>
-  <script src="./assets/js/romeo.js"></script>
+  <script src="./assets/js/maincharacters.js"></script>
   <script src="./assets/js/bg.js"></script>
 </body>
 

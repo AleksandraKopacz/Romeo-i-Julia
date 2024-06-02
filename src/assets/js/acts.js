@@ -10,6 +10,9 @@ ACTTWO.src = "./assets/images/acttwo.jpg";
 const ACTTHREE = new Image();
 ACTTHREE.src = "./assets/images/actthree.jpg";
 
+const ACTFOUR = new Image();
+ACTFOUR.src = "./assets/images/actfour.jpg";
+
 const ACTFIVE = new Image();
 ACTFIVE.src = "./assets/images/actfive.jpg";
 
@@ -33,6 +36,8 @@ function switchAct(index) {
     case 4:
       actFive();
       break;
+    default:
+      actCtx.clearRect(0, 0, act.width, act.height);
   }
 }
 

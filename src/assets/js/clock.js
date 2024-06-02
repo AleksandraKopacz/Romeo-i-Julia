@@ -5,10 +5,10 @@ const CLOCK = new Image();
 CLOCK.src = "./assets/images/clock.png";
 
 const LONGER = new Image();
-LONGER.src = "./assets/images/longer.png"
+LONGER.src = "./assets/images/longer.png";
 
 const SHORTER = new Image();
-SHORTER.src = "./assets/images/shorter.png"
+SHORTER.src = "./assets/images/shorter.png";
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -66,7 +66,13 @@ function drawHour(ctx, pos, length, width) {
   ctx.beginPath();
   ctx.moveTo(0, 0);
   ctx.rotate(pos);
-  ctx.drawImage(SHORTER, -20, -length-10, SHORTER.width*0.15, SHORTER.height * 0.15);
+  ctx.drawImage(
+    SHORTER,
+    -20,
+    -length - 10,
+    SHORTER.width * 0.15,
+    SHORTER.height * 0.15
+  );
   ctx.rotate(-pos);
 }
 
@@ -74,17 +80,23 @@ function drawMinute(ctx, pos, length, width) {
   ctx.beginPath();
   ctx.moveTo(0, 0);
   ctx.rotate(pos);
-  ctx.drawImage(LONGER, -10, -length, LONGER.width * 0.15, LONGER.height * 0.15);
+  ctx.drawImage(
+    LONGER,
+    -10,
+    -length,
+    LONGER.width * 0.15,
+    LONGER.height * 0.15
+  );
   ctx.rotate(-pos);
 }
 
 function drawSecond(ctx, pos, length, width) {
   ctx.beginPath();
-    ctx.lineWidth = width* 0.25;
-    ctx.lineCap = "round";
-    ctx.moveTo(0,0);
-    ctx.rotate(pos);
-    ctx.lineTo(0, -length*0.99);
-    ctx.stroke();
-    ctx.rotate(-pos);
+  ctx.lineWidth = width * 0.25;
+  ctx.lineCap = "round";
+  ctx.moveTo(0, 0);
+  ctx.rotate(pos);
+  ctx.lineTo(0, -length * 0.99);
+  ctx.stroke();
+  ctx.rotate(-pos);
 }

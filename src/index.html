@@ -6,24 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Romeo i Julia</title>
   <link href="./assets/scss/main.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="romeoandjuliet.html">Romeo i Julia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sidecharacters.html">Postacie poboczne</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="quiz.html">Quiz</a>
-        </li>
-      </ul>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.png" alt="logo" width="40" height="40">
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="romeoandjuliet.html">Romeo i Julia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sidecharacters.html">Postacie poboczne</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
     <main>
       <div class="clockContainer">
         <canvas id="canvas" width="400" height="400">
@@ -32,7 +39,8 @@
       </div>
       <div style="clear: both;">
         <h1 style="text-align: center; color: white;">Romeo i Julia</h1>
-        <p style="text-align: center; color: white;">Lorem ipsum</p>
+        <p style="text-align: center; color: white; font-style: italic;">"Czym jest nazwa? To, co zwiemy różą, pod inną
+          nazwą równie by pachniało."</p>
       </div>
     </main>
   </div>

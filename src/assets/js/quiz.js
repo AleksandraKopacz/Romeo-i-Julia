@@ -92,8 +92,8 @@ function setStatusClass(element, correct) {
 }
 
 function clearStatusClass(element) {
-  element.classList.remove("correct");
-  element.classList.remove("wrong");
+  element.classList.remove("btn-success");
+  element.classList.remove("btn-danger");
 }
 
 function concludeQuiz() {
@@ -106,6 +106,9 @@ function concludeQuiz() {
       <p>Your score: ${score} out of ${shuffledQuestions.length}</p>
       <button class="btn btn-navi" onclick="restartQuiz()">Restart Quiz</button>
   `;
+
+  switchAct(-1);
+
   quizAppElement.appendChild(resultsElement);
 }
 
@@ -157,17 +160,16 @@ const questions = [
         correct: true,
       },
       { text: "Parys", correct: false },
-      { text: "Ojciec Laurent", correct: false },
+      { text: "Ojciec Laurenty", correct: false },
     ],
   },
   {
-    question:
-      "Which method can add one or more elements to the end of an array?",
+    question: "Jak Kapuleci i Montekowie reagują na śmierć swoich dzieci?",
     answers: [
-      { text: "array.unshift()", correct: false },
-      { text: "array.push()", correct: true },
-      { text: "array.pop()", correct: false },
-      { text: "array.slice()", correct: false },
+      { text: "Obwiniają się nawzajem", correct: false },
+      { text: "Zgadzają się zakończyć waśń", correct: true },
+      { text: "Oboje umierają z żalu", correct: false },
+      { text: "Chcą ukarać ojca Laurentego", correct: false },
     ],
   },
 ];
