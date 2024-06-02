@@ -2939,7 +2939,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #af4a51;
+  --bs-btn-color: #392f3d;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
@@ -11977,12 +11977,16 @@ textarea.form-control-lg {
   top: 0;
 }
 
+#act {
+  z-index: 1;
+}
+
 .pics {
   padding-top: 20vh;
 }
 
 .wrapper {
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 
@@ -11995,11 +11999,12 @@ textarea.form-control-lg {
 }
 
 #quiz-app {
+  color: white;
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #252229;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -12017,20 +12022,6 @@ textarea.form-control-lg {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 10px;
-}
-
-.button {
-  padding: 10px 15px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #0056b3;
 }
 
 #controls {
@@ -12053,21 +12044,19 @@ textarea.form-control-lg {
   align-items: center;
   height: 90vh;
   margin: 0;
-  background: linear-gradient(to right, #6DD5FA, #2979FF);
-  color: #333;
 }
 
 .btn-navi,
-.btn-choice:hover {
-  background-color: #af4a51;
+.btn-choice {
+  background-color: #392f3d;
   color: white;
 }
 
 .btn-navi:hover,
-.btn-choice {
-  background-color: white;
-  border-color: #af4a51;
-  color: black;
+.btn-choice:hover {
+  background-color: #252229;
+  border-color: #392f3d;
+  color: white;
 }
 
 img {

@@ -1,18 +1,20 @@
 const act = document.getElementById("act");
 const actCtx = act.getContext("2d");
-let radius = act.height / 2;
-actCtx.translate(radius, radius);
-radius = radius * 0.9;
 
-const COURT = new Image();
-COURT.src = "./assets/images/courtyard.png"
+const ACTONE = new Image();
+ACTONE.src = "./assets/images/actone.jpg";
 
-const BALCONY = new Image();
-BALCONY.src = "./assets/images/balcony.png"
+const ACTTWO = new Image();
+ACTTWO.src = "./assets/images/acttwo.jpg";
+
+const ACTTHREE = new Image();
+ACTTHREE.src = "./assets/images/actthree.jpg";
+
+const ACTFIVE = new Image();
+ACTFIVE.src = "./assets/images/actfive.jpg";
 
 act.width = window.innerWidth;
 act.height = window.innerHeight;
-
 
 function switchAct(index) {
   switch (index) {
@@ -30,45 +32,32 @@ function switchAct(index) {
       break;
     case 4:
       actFive();
+      break;
   }
 }
 
 function actOne() {
-    actCtx.drawImage(BALCONY, 0, 0, act.width, act.height);
-    /*actCtx.fillStyle = "#dbab85";
-    actCtx.fillRect(-80, -75, act.width / 12, act.height);
-    actCtx.fillRect(-10, -75, act.width / 12, act.height);
-    actCtx.fillRect(60, -75, act.width / 12, act.height);
-    actCtx.fillRect(130, -75, act.width / 12, act.height);
-    actCtx.fillRect(200, -75, act.width / 12, act.height);
-
-    actCtx.fillRect(-80, -90, act.height * 2, act.width / 12);*/
+  actCtx.drawImage(ACTONE, 0, -act.height * 0.25, act.width, ACTONE.height);
 }
 
 function actTwo() {
-  actCtx.beginPath();
-  actCtx.arc(0, 0, radius, 0, 2 * Math.PI);
-  actCtx.fillStyle = "black";
-  actCtx.fill();
+  actCtx.drawImage(ACTTWO, 0, 0, act.width, act.height);
 }
 
 function actThree() {
-  actCtx.beginPath();
-  actCtx.arc(0, 0, radius, 0, 2 * Math.PI);
-  actCtx.fillStyle = "red";
-  actCtx.fill();
+  actCtx.drawImage(
+    ACTTHREE,
+    -act.width * 0.1,
+    -act.height * 0.25,
+    ACTTHREE.width,
+    ACTTHREE.height
+  );
 }
 
 function actFour() {
-  actCtx.beginPath();
-  actCtx.arc(0, 0, radius, 0, 2 * Math.PI);
-  actCtx.fillStyle = "blue";
-  actCtx.fill();
+  actCtx.drawImage(ACTFOUR, 0, 0, act.width, act.height);
 }
 
 function actFive() {
-  actCtx.beginPath();
-  actCtx.arc(0, 0, radius, 0, 2 * Math.PI);
-  actCtx.fillStyle = "green";
-  actCtx.fill();
+  actCtx.drawImage(ACTFIVE, 0, 0, act.width, act.height);
 }

@@ -104,7 +104,7 @@ function concludeQuiz() {
   resultsElement.innerHTML = `
       <h2>Quiz Completed!</h2>
       <p>Your score: ${score} out of ${shuffledQuestions.length}</p>
-      <button onclick="restartQuiz()">Restart Quiz</button>
+      <button class="btn btn-navi" onclick="restartQuiz()">Restart Quiz</button>
   `;
   quizAppElement.appendChild(resultsElement);
 }
@@ -118,43 +118,46 @@ function restartQuiz() {
 
 const questions = [
   {
-    question: "What is a Variable in JavaScript?",
-    answers: [
-      { text: "A section of the webpage", correct: false },
-      { text: "A container for storing data values", correct: true },
-      { text: "A type of JavaScript function", correct: false },
-      { text: "An operation in mathematics", correct: false },
-    ],
-  },
-  {
     question:
-      "Which of the following is used to declare a variable in JavaScript?",
+      "Jak reaguje Tybalt, zorientowawszy się w obecności Romea na balu u Kapuletów?",
     answers: [
-      { text: "var", correct: false },
-      { text: "let", correct: false },
-      { text: "const", correct: false },
-      { text: "All of the above", correct: true },
-    ],
-  },
-  {
-    question: "What does the `===` operator check?",
-    answers: [
-      { text: "Only value equality", correct: false },
-      { text: "Only type equality", correct: false },
-      { text: "Both value and type equality", correct: true },
-      { text: "Neither value nor type equality", correct: false },
-    ],
-  },
-  {
-    question: "What is an Array in JavaScript?",
-    answers: [
-      { text: "A function that performs an operation", correct: false },
+      { text: "Wyzywa go na pojedynek", correct: false },
+      { text: "Natychmiast sięga po rapier", correct: true },
+      { text: "Publicznie obrzuca go inwektywami", correct: false },
       {
-        text: "A single variable used to store different elements",
+        text: "Podnosi larum, wzywając innych do wyrzucenia niechcianego gościa",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "Gdzie dochodzi do potajemnego ślubu kochanków?",
+    answers: [
+      { text: "W ogrodowej altanie domu Montekich", correct: false },
+      { text: "W ogrodzie Kapuletów", correct: false },
+      { text: "Na cmentarzu", correct: false },
+      { text: "W celi ojca Laurentego", correct: true },
+    ],
+  },
+  {
+    question: "Kto ginie od ciosu Tybalta?",
+    answers: [
+      { text: "Piotr", correct: false },
+      { text: "Benwolio", correct: false },
+      { text: "Merkucjo", correct: true },
+      { text: "Romeo", correct: false },
+    ],
+  },
+  {
+    question: "Kto znajduje Julię pogrążoną w śnie?",
+    answers: [
+      { text: "Pani Kapulet", correct: false },
+      {
+        text: "Marta",
         correct: true,
       },
-      { text: "A series of characters", correct: false },
-      { text: "A conditional statement", correct: false },
+      { text: "Parys", correct: false },
+      { text: "Ojciec Laurent", correct: false },
     ],
   },
   {
