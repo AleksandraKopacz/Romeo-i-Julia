@@ -24,20 +24,7 @@ function drawClock() {
   drawTime(ctx, radius);
 }
 
-function drawFace(ctx, radius) {
-  const grad = ctx.createRadialGradient(
-    0,
-    0,
-    radius * 0.95,
-    0,
-    0,
-    radius * 1.05
-  );
-  grad.addColorStop(0, "#333");
-  grad.addColorStop(0.5, "white");
-  grad.addColorStop(1, "#333");
-  ctx.beginPath();
-
+function drawFace(ctx) {
   ctx.drawImage(MOON, -188, -186, 375, 375);
   ctx.drawImage(CLOCK, -180, -179, 360, 360);
 }
@@ -53,16 +40,16 @@ function drawTime(ctx, radius) {
     (hour * Math.PI) / 6 +
     (minute * Math.PI) / (6 * 60) +
     (second * Math.PI) / (360 * 60);
-  drawHour(ctx, hour, radius * 0.5, radius * 0.07);
+  drawHour(ctx, hour, radius * 0.5);
   //minute
   minute = (minute * Math.PI) / 30 + (second * Math.PI) / (30 * 60);
-  drawMinute(ctx, minute, radius * 0.8, radius * 0.07);
+  drawMinute(ctx, minute, radius * 0.8);
   // second
   second = (second * Math.PI) / 30;
   drawSecond(ctx, second, radius * 0.9, radius * 0.02);
 }
 
-function drawHour(ctx, pos, length, width) {
+function drawHour(ctx, pos, length) {
   ctx.beginPath();
   ctx.moveTo(0, 0);
   ctx.rotate(pos);
@@ -76,7 +63,7 @@ function drawHour(ctx, pos, length, width) {
   ctx.rotate(-pos);
 }
 
-function drawMinute(ctx, pos, length, width) {
+function drawMinute(ctx, pos, length) {
   ctx.beginPath();
   ctx.moveTo(0, 0);
   ctx.rotate(pos);
