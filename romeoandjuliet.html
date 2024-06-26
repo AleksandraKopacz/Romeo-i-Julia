@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romeo i Julia</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+  <link href="./assets/scss/main.css" rel="stylesheet">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.png" alt="logo" width="40" height="40">
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="romeoandjuliet.html">Romeo i Julia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sidecharacters.html">Postacie poboczne</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container text-center pics">
+      <div class="row">
+        <div class="col">
+          <canvas id="juliet" data-bs-toggle="modal" data-bs-target="#juliaModal"></canvas>
+        </div>
+        <div class="col">
+          <canvas id="romeo" data-bs-toggle="modal" data-bs-target="#romeoModal"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Julia Kapulet Modal -->
+  <div class="modal fade" id="juliaModal" tabindex="-1" aria-labelledby="juliaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content purple">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="juliaModalLabel">Julia Kapulet</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <p>Julia pochodzi z Werony, ze znanej i szanowanej rodziny Kapuletów. Jest pierwszym dzieckiem swoich
+                  rodziców
+                  i jedynym pozostającym przy życiu w czasie akcji utworu (Kapulet wspomina, iż Ziemia pochłonęła
+                  wszystkie me
+                  nadzieje, oprócz tej jednej). Podczas trwania sztuki mają miejsce czternaste urodziny Julii, które –
+                  zgodnie
+                  z tekstem oryginału – przypadają na 31 lipca lub 1 sierpnia. W związku z tym, że uroczystości odbywają
+                  się
+                  na kilka dni przed tą datą, można wnioskować, że sama akcja rozgrywa się w połowie lipca.</p>
+                <p>Tytułowa bohaterka Romea i Julii jest bardzo młoda – ma zaledwie czternaście lat. Mimo że w XVI
+                  wieku,
+                  kiedy Szekspir pisał tę sztukę, w wielu krajach Europy kobiety na tym etapie życia miały już męża i
+                  potomstwo, w Anglii przyjęte było, iż właściwym wiekiem dla kobiety na wyjście za mąż było 21 lat. W
+                  ten
+                  sposób ówczesny widz mógł łatwiej sobie wyobrazić sytuację, w której uczucie pomiędzy dwojgiem młodych
+                  ludzi
+                  może doprowadzić do kłopotów. Była to sztuka o Włochach – statystyczny ówczesny mieszkaniec Wysp
+                  Brytyjskich
+                  nigdy nie spotkał żadnego z nich, byli powszechnie uznawani za mieszkańców odległego, dość
+                  egzotycznego
+                  kraju, co także tłumaczyło zaobserwowane różnice.</p>
+                <p>Akcja sztuki trwa nie dłużej niż tydzień. W tym czasie bohaterka przeżywa liczne trudności, związane
+                  z
+                  wejściem w dorosłość. Zakochuje się, doświadcza śmierci bliskiego sobie kuzyna, zdradza ją
+                  najwierniejsza
+                  opiekunka, wdowieje, w końcu popełnia samobójstwo. Mimo to wykazuje się odpornością psychiczną i dużą
+                  inteligencją. Jest opanowana, w przeciwieństwie do impulsywnego Romea. Do niej także należy inicjatywa
+                  w ich
+                  związku: to ona pozwala mu się pocałować, sugeruje małżeństwo, wybacza swojemu wybrankowi zabicie
+                  kuzyna.
+                  Julia jest wierna swoim ideałom, wierzy, że to, co robi, jest słuszne.</p>
+              </div>
+              <div class="col">
+                <img src="./assets/images/painting1.jpg" alt="Romeo i Julia, John Henry Frederick Bacon" />
+                <p>"Romeo i Julia", John Henry Frederick Bacon</p>
+                <img src="./assets/images/painting3.png" alt="Pocałunek, Gaetano Previati" />
+                <p>"Pocałunek", Gaetano Previati</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Romeo Monteki Modal -->
+  <div class="modal fade" id="romeoModal" tabindex="-1" aria-labelledby="romeoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content purple">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="romeoModalLabel">Romeo Monteki</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <p>Romeo pochodził z rodu Montekich. Kochał dziewczynę z rodu Kapuletów, który od bardzo dawna zwaśniony
+                  był z
+                  rodem Montekich. Waśń toczyła się między całymi rodami, a także między przyjaciółmi tych dwóch
+                  najbogatszych
+                  rodzin. Jak mówi powiedzenie, nienawiść i miłość są ze sobą powiązane. Tak było i w tym przypadku.
+                  Potomkowie tych dwóch skłóconych rodów pokochali się ogromną miłością. Przeszkody, które stanęły przed
+                  tą
+                  miłością, tylko umocniły niefortunne uczucie. Niestety, miłość ta skończyła się tragicznie.</p>
+                <p>Romeo był niepoprawnym romantykiem. Był bardzo skryty. Młodzieniec nie lubił się zwierzać, on sam był
+                  dla
+                  siebie jedynym powiernikiem swych smutków, tajemnic i uczuć. Z początku kochał Rozalinę, a raczej samą
+                  miłość do niej. Gdy nie było jej przy nim, bardzo cierpiał. Oblicze prawdziwej miłości poznał dopiero
+                  wówczas, gdy poznał Julię. Wtedy doznał prawdziwej miłości, uświadomił sobie, że do tej pory nikogo
+                  nie
+                  kochał. Julię obdarzył ogromną miłością, choć nawet nie znał dziewczyny. Młodzieniec chciał być z nią
+                  na
+                  zawsze. Romeo starał się unikać waśni z rodziną Julii, nie chciał się z nimi kłócić. Szanował
+                  Kapuletów,
+                  mimo stosunków jego rodu z ich rodem. Miał nadzieję, że przyjdzie czas, kiedy z Julią nie będą musieli
+                  się
+                  przed nikim ukrywać, będą mogli pokazywać się razem. Miłość Romea nie znała żadnych granic i
+                  przeszkód.
+                  Romeo starał się być opanowany, ale potrafił być spokojny jedynie w chwilach szczęścia, wtedy gdy mu
+                  się
+                  wszystko udawało. Gdy coś poszło gorzej, Romeo załamywał się i nie potrafił sobie poradzić z tym.
+                  Młodzieniec był wtedy bezsilny i nie potrafił racjonalnie myśleć. Romeo łatwo poddawał się cudzym
+                  planom,
+                  łatwo było nim manipulować. Bohater był bardzo wierny i oddany Julii. Bardzo cenił też przyjaźń. Gdy
+                  Tybalt
+                  zabił jego przyjaciela, Merkucja, Romeo odpłacił mu się zabijając go. Za ten czyn wygnano go z Werony.
+                  Romeo
+                  nie mógł sobie z tą sytuacja poradzić. Poza Weroną nie widział świata, życie poza nią było dla niego
+                  okropną
+                  męczarnią. "Zewnątrz Werony nie ma świata, tylko tortury, czyściec, piekło samo! Stąd być wygnanym,
+                  jest to
+                  być wygnanym ze świata; być zaś wygnanym ze świata, jest to śmierć ponieść, wygnanie jest, zatem
+                  śmiercią
+                  barwioną." Bardzo tęsknił za Julią, która została w Weronie. Kochał ją bardzo mocno i pielęgnował to
+                  uczucie
+                  w swoim sercu. Jego miłość do Julii była bliska szaleństwa. Gdy dowiedział się o rzekomej śmierci
+                  Julii,
+                  dostał szoku. Nagle stracił to, co było dla niego najważniejsze, zawalił się jego świat. Chciał być
+                  blisko
+                  Julii, gdyż nie widział już swojego życia na świecie, w którym nie ma jego ukochanej. Chciał umrzeć i
+                  udało
+                  mu się cel ten zrealizować.</p>
+              </div>
+              <div class="col">
+                <img src="./assets/images/painting2.jpg" alt="Romeo i Julia, Frank Dicksee" />
+                <p>"Romeo i Julia", Frank Dicksee</p>
+                <img src="./assets/images/painting4.png" alt="Romeo i Julia, Scena na Balkonie, Hans Makart" />
+                <p>"Romeo i Julia, Scena na Balkonie", Hans Makart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <canvas id="bg"></canvas>
+  <script src="./assets/js/maincharacters.js"></script>
+  <script src="./assets/js/bg.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+@font-face {
+  font-family: "Sinoreta";
+  src: local("Sinoreta"), url(../fonts/SinoretaPersonalUseRegular-eZdEl.otf) format("otf");
+}
+
+$font-family-sans-serif: Sinoreta;
+$link-color: white;
+$prpl-bg: #392f3d;
+$prpl-stripe: #252229;
+$modal-header-border-color: $prpl-stripe;
+$btn-color: $prpl-bg;
+
+@import "~bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+#sky,
+#act,
+#bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#act {
+  z-index: 1;
+}
+
+.pics {
+  padding-top: 20vh;
+}
+
+.wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+.clockContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+}
+
+#quiz-app {
+  color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $prpl-stripe;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+
+#controls {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#controls.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+}
+
+.btn-navi,
+.btn-choice {
+  background-color: $btn-color;
+  color: white;
+}
+
+.btn-navi:hover,
+.btn-choice:hover {
+  background-color: $prpl-stripe;
+  border-color: $btn-color;
+  color: white;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+}
+
+.purple {
+  background-color: $prpl-bg;
+  color: white;
+}

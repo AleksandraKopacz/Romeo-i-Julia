@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <link href="./assets/scss/main.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body class="bodyQuiz">
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/images/logo.png" alt="logo" width="40" height="40">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="romeoandjuliet.html">Romeo i Julia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sidecharacters.html">Postacie poboczne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="quiz">
+            <div id="quiz-app">
+                <h1>Quiz z lektury "Romeo i Julia"</h1>
+                <div id="question-container">
+                    <div id="question">
+                        Rozwiąż quiz z lektury "Romeo i Julia" i sprawdź swoją znajomość tego dramatu Szekspira,
+                        przedstawiającego historię tragicznej miłości dwojga młodych ludzi.</div>
+                    <div id="answer-buttons" class="btn-grid">
+                    </div>
+                </div>
+                <div id="controls">
+                    <button id="start-btn" class="btn btn-navi">Start</button>
+                    <button id="next-btn" class="btn btn-navi">Następne pytanie</button>
+                </div>
+                <div id="results">
+                </div>
+            </div>
+    </div>
+    </main>
+    <canvas id="act">
+        Sorry, your browser does not support canvas.
+    </canvas>
+    <canvas id="bg">
+        Sorry, your browser does not support canvas.
+    </canvas>
+    <script src="./assets/js/quiz.js"></script>
+    <script src="./assets/js/acts.js"></script>
+    <script src="./assets/js/bg.js"></script>
+</body>
+
+</html>
