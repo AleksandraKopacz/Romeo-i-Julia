@@ -1,15 +1,18 @@
 {
+  "homepage": "https://aleksandrakopacz.github.io/Romeo-i-Julia",
   "name": "romeojulia",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
+    "deploy": "gh-pages -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1"
   }
 }
