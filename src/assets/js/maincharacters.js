@@ -21,7 +21,7 @@ async function loadRomeo() {
     };
   };
   ROMEO.onerror = () => {
-    document.body.append(" No image ");
+   console.log(" No image ");
   };
 }
 
