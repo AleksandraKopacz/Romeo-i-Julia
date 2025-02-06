@@ -11,7 +11,7 @@ const rmCtx = romeo.getContext("2d");
 
 loadRomeo();
 
-function loadRomeo() {
+async function loadRomeo() {
   FRAME2.onload = () => {
     ROMEO.onload = () => {
       romeo.width = FRAME2.width / 2;
@@ -19,6 +19,9 @@ function loadRomeo() {
       rmCtx.drawImage(ROMEO, 0, 0, FRAME2.width / 2, FRAME2.height / 2);
       rmCtx.drawImage(FRAME2, 0, 0, FRAME2.width / 2, FRAME2.height / 2);
     };
+  };
+  ROMEO.onerror = () => {
+    document.body.append(" No image ");
   };
 }
 
