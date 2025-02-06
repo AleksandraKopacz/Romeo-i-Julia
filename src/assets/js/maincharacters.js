@@ -11,18 +11,13 @@ const rmCtx = romeo.getContext("2d");
 
 loadRomeo();
 
-async function loadRomeo() {
-  FRAME2.onload = () => {
+function loadRomeo() {
     ROMEO.onload = () => {
       romeo.width = FRAME2.width / 2;
       romeo.height = FRAME2.height / 2;
       rmCtx.drawImage(ROMEO, 0, 0, FRAME2.width / 2, FRAME2.height / 2);
       rmCtx.drawImage(FRAME2, 0, 0, FRAME2.width / 2, FRAME2.height / 2);
     };
-  };
-  ROMEO.onerror = () => {
-   console.log(" No image ");
-  };
 }
 
 // JULIET
