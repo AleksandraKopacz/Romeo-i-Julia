@@ -27,7 +27,7 @@ const jlCtx = juliet.getContext("2d");
 loadJuliet();
 
 function loadJuliet() {
-  FRAME.onload = () => {
+  JULIET.onload = () => {
     juliet.width = JULIET.width / 2;
     juliet.height = JULIET.height / 2;
     jlCtx.drawImage(JULIET, 0, 0, JULIET.width / 2, JULIET.height / 2);
